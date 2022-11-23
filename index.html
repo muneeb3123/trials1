@@ -1,26 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mhnat.css">
+</head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<body>
+    <h1 class="textcenter">freeCodeCamp Survey Form</h1>
+    <p class="textcenter">Thank you for taking the time to help us improve the platform</p>
+    <form >
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="number">Age (optional)</label>
+            <input type="number" name="age" placeholder="Age" required>
+        </div>
+        <div>
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="dropdown" required>
+                <option value="" disabled="" selected="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="learner">Full time learner</option>
+                <option value="noPrefer">Prefer not to say</option>
+                <option value="instead">Other</option>
+            </select>
+        </div>
+        <div>
+            <p>Which option best describes your current role?</p>
+            <input type="radio" name="recommended" value="Definately">
+            <label for="deinately">Definately</label><br>
+            <input type="radio" name="recommended" value="Maybe">
+            <label for="maybe">Maybe</label><br>
+            <input type="radio" name="recommended" value="Not sure">
+            <label for="notsure">Not sure</label>
+        </div>
+        <div>
+            <p>What would you like to see improved? (check all that apply)</p>
+            <label><input type="checkbox" name="improved" value="Front-end Projects">Font-end Projects
+                </label><br>
+                <label><input type="checkbox" name="improved" value="Front-end Projects">Font-end Projects
+                </label><br>
+                <label><input type="checkbox" name="improved" value="Back-end Projects">Back-end Projects
+                </label><br>
+                <label><input type="checkbox" name="improved" value="Data Visualization">Data Visualization
+                </label><br>
+                <label><input type="checkbox" name="improved" value="Challenges">Challenges
+                </label><br>
+                <label><input type="checkbox" name="improved" value="Open Source Community">Open Source Community
+                </label><br>
+                <label><input type="checkbox" name="improved" value="Gitter help rooms">Gitter help rooms
+                </label><br>
+                <label><input type="checkbox" name="improved" value="Videos">Videos
+                </label><br>
+                <label><input type="checkbox" name="improved" value=" City Meetupss">City Meetups
+                </label><br>
+                <label><input type="checkbox" name="improved" value=" Wiki">Wiki
+                </label><br>
+                <label><input type="checkbox" name="improved" value=" Forum">Forum
+                </label><br>
+                <label><input type="checkbox" name="improved" value=" Additional Courses">Additional Courses
+                </label>
+                <div>
+                   <p>Any comments or suggestions?</p>
+                   <textarea name="comment" id="comment" placehelder="Enter your comment here"></textarea>
+                
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+        </div>
+    </form>
+    
+        
+     
 
-    <!--
 
-    Hello Camper!
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
-  </body>
+</body>
 </html>
